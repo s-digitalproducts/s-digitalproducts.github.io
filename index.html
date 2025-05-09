@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitale Produkte | Dein Shop</title>
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --dark: #2d3436;
+            --light: #f5f6fa;
+            --success: #00b894;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-image {
+            height: 200px;
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            color: var(--dark);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: var(--dark);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: var(--dark);
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meine Digitalen Produkte</h1>
+            <p class="subtitle">Hochwertige digitale Lösungen für deine Bedürfnisse. Sofortiger Download nach dem Kauf.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="products">
+            <!-- Produkt 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    [Produktbild]
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">E-Book: Erfolgreich Online</h3>
+                    <p>Lerne, wie du dein Business online erfolgreich aufbaust mit diesem umfassenden Guide.</p>
+                    <div class="product-price">€19,99</div>
+                    <a href="#" class="btn">Jetzt kaufen</a>
+                </div>
+            </div>
+            
+            <!-- Produkt 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    [Produktbild]
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Photoshop Vorlagen</h3>
+                    <p>Professionelle Photoshop-Vorlagen für Social Media, Marketing und mehr.</p>
+                    <div class="product-price">€29,99</div>
+                    <a href="#" class="btn">Jetzt kaufen</a>
+                </div>
+            </div>
+            
+            <!-- Produkt 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    [Produktbild]
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Online Kurs</h3>
+                    <p>Step-by-Step Video Kurs mit allem was du wissen musst, um durchzustarten.</p>
+                    <div class="product-price">€49,99</div>
+                    <a href="#" class="btn">Jetzt kaufen</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Dein Shop Name. Alle Rechte vorbehalten.</p>
+            <p><a href="#" style="color: var(--secondary);">Impressum</a> | <a href="#" style="color: var(--secondary);">Datenschutz</a> | <a href="#" style="color: var(--secondary);">Kontakt</a></p>
+        </div>
+    </footer>
+</body>
+</html>
